@@ -65,8 +65,19 @@ findAllValidMoves(Colour colour)
 - Go through each tile
     - run findValidMoves()
 
-- function findValidMoves(Tile tile, Colour colour) : \[Position]
+- function findValidMoves(Colour colour) : \[Position]
 
     - if it has a piece, check if it is the right colour
     - if so, does it have space forward or to capture
     - return array of Positions
+
+--- 
+test cases
+findValidMoves
+    - tile (3,3)
+    - piece
+        - black
+    - no other pieces on any tiles
+    -> [(4, 2), (4, 4)]
+
+
